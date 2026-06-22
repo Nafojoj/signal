@@ -1,12 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/variables.css">
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/adaptive.css">
-    <link rel="stylesheet" href="styles/animations.css">
-
-    <title>My Websitefrfrfr</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIGNAL — Агентство цифровой рекламы</title>
+<link rel="stylesheet" href="styles/reset.css">
+<link rel="stylesheet" href="styles/fonts.css">
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/adaptive.css">
 </head>
+<body>
+
+<header>
+  <span class="logo" onclick="showPage('home')">SIGNAL</span>
+  <nav>
+    <button onclick="showPage('home')" id="nav-home" class="active">Главная</button>
+    <button onclick="showPage('services')" id="nav-services">Услуги</button>
+    <button onclick="showPage('cases')" id="nav-cases">Кейсы</button>
+    <button onclick="showPage('about')" id="nav-about">О нас</button>
+    <button onclick="showPage('blog')" id="nav-blog">Блог</button>
+  </nav>
+  <button class="hcta" onclick="showPage('brief')">Обсудить задачу</button>
+</header>
+
+
+<!-- ============ HOME ============ -->
+<div class="page active" id="page-home">
+
+  <section class="hero">
+    <div>
+      <div class="hero-tag">Digital-агентство</div>
+      <h1>Делаем трафик <em>понятным</em></h1>
+      <p class="hero-sub">Приводим клиентов из Яндекс.Директ, VK и Telegram. Считаем каждый вложенный рубль с помощью сквозной аналитики — и отвечаем за результат.</p>
+      <div class="hero-actions">
+        <button class="btn btn-fill" onclick="showPage('brief')">Начать проект</button>
+        <button class="btn btn-ghost" onclick="showPage('cases')">Смотреть кейсы</button>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="stat-row">
+        <div class="sbox">
+          <div class="snum">3.2x</div>
+          <div class="slabel">Средний рост ROI</div>
+        </div>
+        <div class="sbox">
+          <div class="snum">120+</div>
+          <div class="slabel">Проектов запущено</div>
+        </div>
+        <div class="sbox">
+          <div class="snum">-38%</div>
+          <div class="slabel">Снижение стоимости заявки в среднем</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="mwrap">
+    <div class="mtrack">
+      Контекстная реклама <span class="sep">/</span> Таргет <span class="sep">/</span> Сквозная аналитика <span class="sep">/</span> SEO-органика <span class="sep">/</span> Стратегия <span class="sep">/</span> Медиапланирование <span class="sep">/</span> Контекстная реклама <span class="sep">/</span> Таргет <span class="sep">/</span> Сквозная аналитика <span class="sep">/</span> SEO-органика <span class="sep">/</span> Стратегия <span class="sep">/</span> Медиапланирование <span class="sep">/</span>
+    </div>
+  </div>
+
+  <section class="section" style="background:var(--wh);">
+    <div class="sec-head">
+      <h2 class="sec-title">Что мы<br>умеем</h2>
+      <button class="btn btn-ghost" onclick="showPage('services')">Все услуги</button>
+    </div>
+    <div class="grid2">
+      <div class="card card-plain">
+        <div class="cnum">01</div>
+        <h3>Контекст</h3>
+        <p>Яндекс.Директ и РСЯ. Настраиваем так, чтобы заявки стоили дешевле, а конверсия в продажу росла.</p>
+      </div>
+      <div class="card card-blue">
+        <div class="cnum">02</div>
+        <h3>Таргет</h3>
+        <p>VK, Telegram, MyTarget. Находим ваших клиентов там, где они проводят свободное время.</p>
+      </div>
+      <div class="card card-green">
+        <div class="cnum">03</div>
+        <h3>Аналитика</h3>
+        <p>Roistat, Метрика, GA4. Объединяем рекламу и CRM — видим реальный ROI с каждого канала.</p>
+      </div>
+      <div class="card card-stripe">
+        <div class="cnum">04</div>
+        <h3>Стратегия</h3>
+        <p>Аудит конкурентов и медиапланирование. Составляем пошаговый план захвата рынка.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="cstrip">
+    <div class="clabel">Нам доверяют</div>
+    <div class="logo-row">
+      <span class="cname">Brand.A</span>
+      <span class="cname">TechStore</span>
+      <span class="cname">SaaS Group</span>
+      <span class="cname">MedClinic</span>
+      <span class="cname">EcoShop</span>
+    </div>
+  </div>
+
+  <footer>
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo">SIGNAL</div>
+        <p class="ft-desc">Агентство цифровой рекламы. Помогаем бизнесу расти за счёт системного подхода к трафику.</p>
+      </div>
+      <div>
+        <div class="ft-col-t">Навигация</div>
+        <ul class="ft-links">
+          <li><button onclick="showPage('services')">Услуги</button></li>
+          <li><button onclick="showPage('cases')">Кейсы</button></li>
+          <li><button onclick="showPage('about')">О нас</button></li>
+          <li><button onclick="showPage('blog')">Блог</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-t">Контакты</div>
+        <ul class="ft-links">
+          <li><a href="mailto:hello@signal.agency">hello@signal.agency</a></li>
+          <li><a href="#">@signal_agency</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>2024 SIGNAL. Все права защищены.</span>
+      <span>Москва</span>
+    </div>
+  </footer>
+
+</div>
+
+
+<!-- ============ SERVICES ============ -->
+<div class="page" id="page-services">
+
+  <div class="phero">
+    <h1>Услуги</h1>
+    <p>Весь цикл — от первого клика до денег в кассе. Работаем системно, а не по отдельным задачам.</p>
+  </div>
+
+  <div class="sfull">
+    <div>
+      <div class="sf-label">01 / Платный трафик</div>
+      <div class="sf-title">Контекстная реклама</div>
+      <p class="sf-txt">Запускаем и ведём кампании в Яндекс.Директ. Добиваемся снижения CPL на 20–40% в первые три месяца за счёт постоянной оптимизации ставок, минус-слов и посадочных страниц.</p>
+      <div class="tag-list">
+        <span class="tag">Яндекс.Директ</span>
+        <span class="tag">РСЯ</span>
+        <span class="tag">Смарт-баннеры</span>
+        <span class="tag">Ретаргетинг</span>
+      </div>
+    </div>
+    <div class="sf-vis" style="background:linear-gradient(135deg,#0e0e0e,#222);">
+      <div class="sf-vis-txt" style="color:var(--grn);">CTX</div>
+    </div>
+  </div>
+
+  <div class="sfull">
+    <div class="sf-vis" style="background:linear-gradient(135deg,#ff6fb7,#ff4da0);">
+      <div class="sf-vis-txt" style="color:rgba(0,0,0,0.2);">TRG</div>
+    </div>
+    <div>
+      <div class="sf-label">02 / Соцсети</div>
+      <div class="sf-title">Таргетированная реклама</div>
+      <p class="sf-txt">VK Ads, Telegram, MyTarget. Находим аудиторию по интересам, поведению и геолокации. Запускаем A/B-тесты креативов и масштабируем то, что работает.</p>
+      <div class="tag-list">
+        <span class="tag">VK Ads</span>
+        <span class="tag">Telegram</span>
+        <span class="tag">MyTarget</span>
+        <span class="tag">Look-alike</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sfull">
+    <div>
+      <div class="sf-label">03 / Данные</div>
+      <div class="sf-title">Сквозная аналитика</div>
+      <p class="sf-txt">Объединяем рекламные кабинеты, CRM и сайт в одну систему. Видите, какой канал реально приносит продажи — а не просто клики. Настраиваем Roistat, Метрику, GA4.</p>
+      <div class="tag-list">
+        <span class="tag">Roistat</span>
+        <span class="tag">Яндекс.Метрика</span>
+        <span class="tag">GA4</span>
+        <span class="tag">CRM-интеграция</span>
+      </div>
+    </div>
+    <div class="sf-vis" style="background:linear-gradient(135deg,#b8ff45,#80d020);">
+      <div class="sf-vis-txt" style="color:rgba(0,0,0,0.2);">DATA</div>
+    </div>
+  </div>
+
+  <div class="sfull" style="border-bottom:none;">
+    <div class="sf-vis" style="background:linear-gradient(135deg,#6c63ff,#4b44d4);">
+      <div class="sf-vis-txt" style="color:rgba(255,255,255,0.3);">STR</div>
+    </div>
+    <div>
+      <div class="sf-label">04 / Стратегия</div>
+      <div class="sf-title">Медиапланирование и аудит</div>
+      <p class="sf-txt">Разбираем текущую рекламу, ищем точки роста, составляем конкурентный анализ. Получаете чёткий план: что делать в следующие 3 месяца, какой бюджет и какой результат ожидать.</p>
+      <div class="tag-list">
+        <span class="tag">Аудит кампаний</span>
+        <span class="tag">Конкурентный анализ</span>
+        <span class="tag">Медиаплан</span>
+        <span class="tag">KPI-прогноз</span>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo">SIGNAL</div>
+        <p class="ft-desc">Агентство цифровой рекламы. Помогаем бизнесу расти за счёт системного подхода к трафику.</p>
+      </div>
+      <div>
+        <div class="ft-col-t">Навигация</div>
+        <ul class="ft-links">
+          <li><button onclick="showPage('home')">Главная</button></li>
+          <li><button onclick="showPage('cases')">Кейсы</button></li>
+          <li><button onclick="showPage('about')">О нас</button></li>
+          <li><button onclick="showPage('blog')">Блог</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-t">Контакты</div>
+        <ul class="ft-links">
+          <li><a href="mailto:hello@signal.agency">hello@signal.agency</a></li>
+          <li><a href="#">@signal_agency</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>2024 SIGNAL. Все права защищены.</span>
+      <span>Москва</span>
+    </div>
+  </footer>
+
+</div>
+
+
+<!-- ============ CASES ============ -->
+<div class="page" id="page-cases">
+
+  <div class="phero">
+    <h1>Кейсы</h1>
+    <p>Конкретные результаты наших клиентов — с цифрами, без воды.</p>
+  </div>
+
+  <div class="cases-wrap">
+
+    <div class="cc">
+      <div class="cc-thumb med"><span class="cc-label">MED</span></div>
+      <div class="cc-body">
+        <div class="cc-tags"><span class="cc-tag">Контекст</span><span class="cc-tag">Аналитика</span></div>
+        <div class="cc-title">Медицинская клиника: рост записей</div>
+        <p class="cc-desc">Перезапустили Яндекс.Директ, настроили колл-трекинг и связали рекламу с CRM. Первичные обращения через сайт выросли в 2 раза за 6 недель.</p>
+        <div class="cc-metrics">
+          <div><div class="mval">+110%</div><div class="mlabel">Заявок</div></div>
+          <div><div class="mval">-42%</div><div class="mlabel">CPL</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cc">
+      <div class="cc-thumb eco"><span class="cc-label">ECO</span></div>
+      <div class="cc-body">
+        <div class="cc-tags"><span class="cc-tag">Таргет</span><span class="cc-tag">VK</span></div>
+        <div class="cc-title">Экошоп: продажи через VK</div>
+        <p class="cc-desc">Запустили таргет с сегментацией по интересам и геолокации. A/B-тест 8 креативов, масштабировали два лучших. ДРР снизился с 38% до 19%.</p>
+        <div class="cc-metrics">
+          <div><div class="mval">x3.1</div><div class="mlabel">ROAS</div></div>
+          <div><div class="mval">-50%</div><div class="mlabel">ДРР</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cc">
+      <div class="cc-thumb saas"><span class="cc-label">SAAS</span></div>
+      <div class="cc-body">
+        <div class="cc-tags"><span class="cc-tag">Контекст</span><span class="cc-tag">Стратегия</span></div>
+        <div class="cc-title">SaaS-продукт: лиды из поиска</div>
+        <p class="cc-desc">Провели аудит, переработали структуру кампаний и минус-слова. Добавили динамические объявления для охвата длинного хвоста.</p>
+        <div class="cc-metrics">
+          <div><div class="mval">+78%</div><div class="mlabel">Лидов</div></div>
+          <div><div class="mval">Тот же</div><div class="mlabel">Бюджет</div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cc">
+      <div class="cc-thumb tech"><span class="cc-label">TECH</span></div>
+      <div class="cc-body">
+        <div class="cc-tags"><span class="cc-tag">Аналитика</span><span class="cc-tag">CRM</span></div>
+        <div class="cc-title">TechStore: сквозная аналитика</div>
+        <p class="cc-desc">Настроили Roistat, связали с amoCRM и рекламными кабинетами. Клиент увидел, что 60% бюджета сливалось в неконверсионные каналы — и перераспределил.</p>
+        <div class="cc-metrics">
+          <div><div class="mval">+2.4x</div><div class="mlabel">ROI</div></div>
+          <div><div class="mval">-60%</div><div class="mlabel">Слив</div></div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <section class="section" style="text-align:center;">
+    <h2 class="sec-title" style="margin-bottom:20px;">Хотите такой же результат?</h2>
+    <p style="font-size:16px;color:#555;margin-bottom:32px;font-weight:500;">Расскажите о задаче — разберём вашу нишу и предложим конкретный план.</p>
+    <button class="btn btn-fill" onclick="showPage('brief')">Обсудить задачу</button>
+  </section>
+
+  <footer>
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo">SIGNAL</div>
+        <p class="ft-desc">Агентство цифровой рекламы. Помогаем бизнесу расти за счёт системного подхода к трафику.</p>
+      </div>
+      <div>
+        <div class="ft-col-t">Навигация</div>
+        <ul class="ft-links">
+          <li><button onclick="showPage('home')">Главная</button></li>
+          <li><button onclick="showPage('services')">Услуги</button></li>
+          <li><button onclick="showPage('about')">О нас</button></li>
+          <li><button onclick="showPage('blog')">Блог</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-t">Контакты</div>
+        <ul class="ft-links">
+          <li><a href="mailto:hello@signal.agency">hello@signal.agency</a></li>
+          <li><a href="#">@signal_agency</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>2024 SIGNAL. Все права защищены.</span>
+      <span>Москва</span>
+    </div>
+  </footer>
+
+</div>
+
+
+<!-- ============ ABOUT ============ -->
+<div class="page" id="page-about">
+
+  <div class="about-hero">
+    <div>
+      <h1>Мы — SIGNAL.<br>Агентство без воды.</h1>
+      <p>Основаны в 2019 году. Работаем с бизнесом, которому важно считать деньги, а не просто запускать рекламу. Наш принцип — прозрачность и цифры, а не красивые отчёты.</p>
+    </div>
+    <div class="about-photo">
+      <div style="position:relative;z-index:1;">
+        <div style="font-family:'Unbounded',sans-serif;font-size:13px;font-weight:700;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em;">Команда SIGNAL</div>
+        <div style="font-family:'Unbounded',sans-serif;font-size:11px;font-weight:700;color:rgba(255,255,255,0.3);margin-top:4px;">Москва, 2024</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" style="background:var(--wh);">
+    <div class="grid3">
+      <div class="card card-plain">
+        <div class="cnum">Основаны</div>
+        <h3>2019</h3>
+        <p>5 лет в digital-рекламе. Пережили изменения рынка и алгоритмов — и стали лучше.</p>
+      </div>
+      <div class="card card-green">
+        <div class="cnum">Проектов</div>
+        <h3>120+</h3>
+        <p>От малого бизнеса до федеральных сетей. Разных ниш, каналов, задач.</p>
+      </div>
+      <div class="card card-blue">
+        <div class="cnum">NPS</div>
+        <h3>89</h3>
+        <p>Индекс лояльности наших клиентов по итогам последнего опроса.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="team-sec">
+    <div class="sec-head">
+      <h2 class="sec-title">Команда</h2>
+    </div>
+    <div class="team-grid">
+      <div class="tcard">
+        <div class="tphoto tp1">ЛВ</div>
+        <div class="tinfo">
+          <div class="tname">Ли Вадим</div>
+          <div class="trole">Основатель проекта</div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tphoto tp2">МС</div>
+        <div class="tinfo">
+          <div class="tname">Мария Смирнова</div>
+          <div class="trole">Руководитель PPC</div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="tphoto tp3">ДК</div>
+        <div class="tinfo">
+          <div class="tname">Дмитрий Козлов</div>
+          <div class="trole">Аналитика и данные</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo">SIGNAL</div>
+        <p class="ft-desc">Агентство цифровой рекламы. Помогаем бизнесу расти за счёт системного подхода к трафику.</p>
+      </div>
+      <div>
+        <div class="ft-col-t">Навигация</div>
+        <ul class="ft-links">
+          <li><button onclick="showPage('home')">Главная</button></li>
+          <li><button onclick="showPage('services')">Услуги</button></li>
+          <li><button onclick="showPage('cases')">Кейсы</button></li>
+          <li><button onclick="showPage('blog')">Блог</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-t">Контакты</div>
+        <ul class="ft-links">
+          <li><a href="mailto:hello@signal.agency">hello@signal.agency</a></li>
+          <li><a href="#">@signal_agency</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>2024 SIGNAL. Все права защищены.</span>
+      <span>Москва</span>
+    </div>
+  </footer>
+
+</div>
+
+
+<!-- ============ BLOG ============ -->
+<div class="page" id="page-blog">
+
+  <div class="phero">
+    <h1>Блог</h1>
+    <p>Пишем о том, что реально работает в рекламе — без инфоциганства и общих слов.</p>
+  </div>
+
+  <div class="blog-wrap">
+
+    <div class="bc">
+      <div class="bthumb bt1"></div>
+      <div class="bbody">
+        <div class="bmeta"><span class="bcat">Контекст</span><span class="bdate">12 нояб. 2024</span></div>
+        <div class="btitle">Как снизить CPL на 40% без увеличения бюджета</div>
+        <p class="bexc">Разбираем 5 конкретных шагов: от чистки минус-слов до автостратегий. Реальный кейс с цифрами.</p>
+      </div>
+    </div>
+
+    <div class="bc">
+      <div class="bthumb bt2"></div>
+      <div class="bbody">
+        <div class="bmeta"><span class="bcat">Аналитика</span><span class="bdate">5 нояб. 2024</span></div>
+        <div class="btitle">Сквозная аналитика: с чего начать в 2024</div>
+        <p class="bexc">Roistat или Метрика? Как выбрать инструмент и не переплатить. Сравниваем три стека для разных бюджетов.</p>
+      </div>
+    </div>
+
+    <div class="bc">
+      <div class="bthumb bt3"></div>
+      <div class="bbody">
+        <div class="bmeta"><span class="bcat">Таргет</span><span class="bdate">28 окт. 2024</span></div>
+        <div class="btitle">VK Ads в 2024: что изменилось и как настраивать</div>
+        <p class="bexc">Новые форматы, аудитории и правила модерации. Полное руководство для тех, кто давно не заходил в кабинет.</p>
+      </div>
+    </div>
+
+    <div class="bc">
+      <div class="bthumb bt4"></div>
+      <div class="bbody">
+        <div class="bmeta"><span class="bcat">Стратегия</span><span class="bdate">15 окт. 2024</span></div>
+        <div class="btitle">Медиаплан без воды: шаблон и логика расчёта</div>
+        <p class="bexc">Как составить медиаплан, которому верят — с прогнозами CPL, охватом и сроками окупаемости.</p>
+      </div>
+    </div>
+
+    <div class="bc">
+      <div class="bthumb bt5"></div>
+      <div class="bbody">
+        <div class="bmeta"><span class="bcat">SEO</span><span class="bdate">3 окт. 2024</span></div>
+        <div class="btitle">SEO и платный трафик: как использовать вместе</div>
+        <p class="bexc">Объясняем, почему они не конкуренты, а союзники. Примеры синергии из реальных проектов.</p>
+      </div>
+    </div>
+
+    <div class="bc">
+      <div class="bthumb bt6"></div>
+      <div class="bbody">
+        <div class="bmeta"><span class="bcat">Кейс</span><span class="bdate">20 сент. 2024</span></div>
+        <div class="btitle">Кейс: как мы вывели клинику в топ по цене лида</div>
+        <p class="bexc">От аудита до результата — 3 месяца, 6 итераций, -42% к CPL. Рассказываем пошагово.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ЗИН -->
+  <div class="zine-simple">
+    <div class="zs-img">
+      <img src="assets/images/zine-cover.jpg" alt="Digital Agency Zine — обложка">
+    </div>
+    <div class="zs-info">
+      <div class="zine-badge">ISSUE 001</div>
+      <h2 class="zs-title">DIGITAL AGENCY<br>ZINE</h2>
+      <p class="zs-desc">История, культура и главные кейсы индустрии цифровой рекламы — от первого баннера до эпохи AI.</p>
+      <a href="assets/zine.pdf" download class="btn btn-fill" style="margin-top:28px;display:inline-block;">Скачать PDF</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="ft-grid">
+      <div>
+        <div class="ft-logo">SIGNAL</div>
+        <p class="ft-desc">Агентство цифровой рекламы. Помогаем бизнесу расти за счёт системного подхода к трафику.</p>
+      </div>
+      <div>
+        <div class="ft-col-t">Навигация</div>
+        <ul class="ft-links">
+          <li><button onclick="showPage('home')">Главная</button></li>
+          <li><button onclick="showPage('services')">Услуги</button></li>
+          <li><button onclick="showPage('cases')">Кейсы</button></li>
+          <li><button onclick="showPage('about')">О нас</button></li>
+        </ul>
+      </div>
+      <div>
+        <div class="ft-col-t">Контакты</div>
+        <ul class="ft-links">
+          <li><a href="mailto:hello@signal.agency">hello@signal.agency</a></li>
+          <li><a href="#">@signal_agency</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="ft-bot">
+      <span>2024 SIGNAL. Все права защищены.</span>
+      <span>Москва</span>
+    </div>
+  </footer>
+
+</div>
+
+
+<!-- ============ BRIEF ============ -->
+<div class="page" id="page-brief">
+  <div class="brief-lay">
+
+    <div class="bleft">
+      <div>
+        <h1>О задаче</h1>
+        <p>Заполните бриф — мы изучим вашу нишу и вернёмся с конкретным планом, а не коммерческим предложением на 30 слайдов.</p>
+        <div class="promises">
+          <div class="pr"><div class="prdot"></div><div class="prtxt">Ответим в течение рабочего дня</div></div>
+          <div class="pr"><div class="prdot"></div><div class="prtxt">Анализ конкурентов — бесплатно</div></div>
+          <div class="pr"><div class="prdot"></div><div class="prtxt">Без навязчивых звонков и скриптов</div></div>
+        </div>
+      </div>
+      <div class="bcontacts">
+        <div class="bclabel">Или напрямую</div>
+        <a href="#" class="bclink">@signal_agency</a>
+        <a href="mailto:hello@signal.agency" class="bclink">hello@signal.agency</a>
+      </div>
+    </div>
+
+    <div class="bright">
+      <div class="fwrap" id="form-wrap">
+        <form id="brief-form" novalidate>
+
+          <div class="fsec">
+            <div class="fstitle"><span class="fsnum">1</span>О вас</div>
+            <div class="frow">
+              <div class="field">
+                <input type="text" id="f-name" placeholder="Ваше имя">
+                <div class="ferr" id="err-name">Введите ваше имя</div>
+              </div>
+              <div class="field">
+                <input type="text" id="f-company" placeholder="Компания (необязательно)">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="field">
+                <input type="email" id="f-email" placeholder="Email">
+                <div class="ferr" id="err-email">Введите корректный email</div>
+              </div>
+              <div class="field">
+                <input type="tel" id="f-phone" placeholder="Телефон или Telegram">
+              </div>
+            </div>
+            <div class="field full">
+              <input type="url" id="f-site" placeholder="Ссылка на сайт (если есть)">
+            </div>
+          </div>
+
+          <div class="fsec">
+            <div class="fstitle"><span class="fsnum">2</span>Что вас интересует?</div>
+            <div class="tgroup">
+              <input type="checkbox" id="s1" class="tcb"><label for="s1" class="tcblabel">Контекстная реклама</label>
+              <input type="checkbox" id="s2" class="tcb"><label for="s2" class="tcblabel">Таргет</label>
+              <input type="checkbox" id="s3" class="tcb"><label for="s3" class="tcblabel">SEO</label>
+              <input type="checkbox" id="s4" class="tcb"><label for="s4" class="tcblabel">Аналитика</label>
+              <input type="checkbox" id="s5" class="tcb"><label for="s5" class="tcblabel">Стратегия / Аудит</label>
+            </div>
+          </div>
+
+          <div class="fsec">
+            <div class="fstitle"><span class="fsnum">3</span>Бюджет в месяц</div>
+            <div class="bggroup">
+              <input type="radio" name="budget" id="b1" class="bgr" checked><label for="b1" class="bgrlabel">До 100 тыс.</label>
+              <input type="radio" name="budget" id="b2" class="bgr"><label for="b2" class="bgrlabel">100–300 тыс.</label>
+              <input type="radio" name="budget" id="b3" class="bgr"><label for="b3" class="bgrlabel">От 300 тыс.</label>
+            </div>
+          </div>
+
+          <div class="fsec">
+            <div class="fstitle"><span class="fsnum">4</span>О задаче</div>
+            <textarea id="f-task" placeholder="Кто ваши клиенты, какие сейчас результаты и к чему хотите прийти..."></textarea>
+          </div>
+
+          <button type="submit" class="bsubmit">Отправить бриф</button>
+        </form>
+      </div>
+
+      <div class="success" id="success-box">
+        <div class="sico">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 18L14 25L29 10" stroke="#0e0e0e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="stitle">Бриф отправлен</div>
+        <p class="stxt">Мы получили вашу заявку и ответим в течение рабочего дня. Проверьте почту — пришлём план следующих шагов.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<script src="scripts/main.js"></script>
+<script src="scripts/fx.js"></script>
+</body>
+</html>
