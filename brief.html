@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Обсудить задачу | SIGNAL</title>
+<link rel="stylesheet" href="styles/reset.css">
+<link rel="stylesheet" href="styles/fonts.css">
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/adaptive.css">
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo" style="text-decoration:none; color:inherit;">SIGNAL</a>
+  <nav>
+    <a href="index.html" id="nav-home">Главная</a>
+    <a href="services.html" id="nav-services">Услуги</a>
+    <a href="cases.html" id="nav-cases">Кейсы</a>
+    <a href="about.html" id="nav-about">О нас</a>
+    <a href="blog.html" id="nav-blog">Блог</a>
+  </nav>
+  <a href="brief.html" class="hcta" style="text-decoration:none; display:inline-flex; align-items:center;">Обсудить задачу</a>
+</header>
+
+<div class="page active">
+  <div class="brief-lay">
+    <div class="bleft">
+      <div>
+        <h1>О задаче</h1>
+        <p>Заполните бриф — мы изучим вашу нишу и вернёмся с конкретным планом, а не коммерческим предложением на 30 слайдов.</p>
+        <div class="promises">
+          <div class="pr"><div class="prdot"></div><div class="prtxt">Ответим в течение рабочего дня</div></div>
+          <div class="pr"><div class="prdot"></div><div class="prtxt">Анализ конкурентов — бесплатно</div></div>
+          <div class="pr"><div class="prdot"></div><div class="prtxt">Без навязчивых звонков и скриптов</div></div>
+        </div>
+      </div>
+      <div class="bcontacts">
+        <div class="bclabel">Или напрямую</div>
+        <a href="#" class="bclink">@signal_agency</a>
+        <a href="mailto:hello@signal.agency" class="bclink">hello@signal.agency</a>
+      </div>
+    </div>
+
+    <div class="bright">
+      <div class="fwrap" id="form-wrap">
+        <form id="brief-form" novalidate>
+          <div class="fsec">
+            <div class="fstitle"><span class="fsnum">1</span>О вас</div>
+            <div class="frow">
+              <div class="field">
+                <input type="text" id="f-name" placeholder="Ваше имя">
+                <div class="ferr" id="err-name">Введите ваше имя</div>
+              </div>
+              <div class="field">
+                <input type="text" id="f-company" placeholder="Компания (необязательно)">
+              </div>
+            </div>
+            <div class="frow">
+              <div class="field">
+                <input type="email" id="f-email" placeholder="Email">
+                <div class="ferr" id="err-email">Введите корректный email</div>
+              </div>
+              <div class="field">
+                <input type="tel" id="f-phone" placeholder="Телефон или Telegram">
+              </div>
+            </div>
+            <div class="field full">
+              <input type="url" id="f-site" placeholder="Ссылка на сайт (если есть)">
+            </div>
+          </div>
+
+          <div class="fsec">
+            <div class="fstitle"><span class="fsnum">2</span>Что вас интересует?</div>
+            <div class="tgroup">
+              <input type="checkbox" id="s1" class="tcb"><label for="s1" class="tcblabel">Контекстная реклама</label>
+              <input type="checkbox" id="s2" class="tcb"><label for="s2" class="tcblabel">Таргет</label>
+              <input type="checkbox" id="s3" class="tcb"><label for="s3" class="tcblabel">SEO</label>
+              <input type="checkbox" id="s4" class="tcb"><label for="s4" class="tcblabel">Аналитика</label>
+              <input type="checkbox" id="s5" class="tcb"><label for="s5" class="tcblabel">Стратегия / Аудит</label>
+            </div>
+          </div>
+
+          <div class="fsec">
+            <div class="fstitle"><span class="fsnum">3</span>Бюджет в месяц</div>
+            <div class="bggroup">
+              <input type="radio" name="budget" id="b1" class="bgr" checked><label for="b1" class="bgrlabel">До 100 тыс.</label>
+              <input type="radio" name="budget" id="b2" class="bgr"><label for="b2" class="bgrlabel">100–300 тыс.</label>
+              <input type="radio" name="budget" id="b3" class="bgr"><label for="b3" class="bgrlabel">От 300 тыс.</label>
+            </div>
+          </div>
+
+          <div class="fsec">
+            <div class="fstitle"><span class="fsnum">4</span>О задаче</div>
+            <textarea id="f-task" placeholder="Кто ваши клиенты, какие сейчас результаты и к чему хотите прийти..."></textarea>
+          </div>
+
+          <button type="submit" class="bsubmit">Отправить бриф</button>
+        </form>
+      </div>
+
+      <div class="success" id="success-box">
+        <div class="sico">
+          <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7 18L14 25L29 10" stroke="#0e0e0e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div class="stitle">Бриф отправлен</div>
+        <p class="stxt">Мы получили вашу заявку и ответим в течение рабочего дня. Проверьте почту — пришлём план следующих шагов.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="scripts/main.js"></script>
+<script src="scripts/fx.js"></script>
+</body>
+</html>

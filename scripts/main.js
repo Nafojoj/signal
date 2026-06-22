@@ -1,18 +1,4 @@
-function showPage(id){
-  var pages = document.querySelectorAll('.page');
-  for(var i=0;i<pages.length;i++){
-    pages[i].classList.remove('active');
-  }
-  var btns = document.querySelectorAll('nav button');
-  for(var i=0;i<btns.length;i++){
-    btns[i].classList.remove('active');
-  }
-  document.getElementById('page-'+id).classList.add('active');
-  var nb = document.getElementById('nav-'+id);
-  if(nb) nb.classList.add('active');
-  window.scrollTo( 0,0 );
-  if(window.onPageChange) window.onPageChange();
-}
+
 
 function checkEmail(v){
   return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim());
